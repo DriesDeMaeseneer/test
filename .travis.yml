@@ -1,0 +1,21 @@
+sudo: false
+dist: focal
+language: cpp
+compiler:
+  - gcc
+
+sources:
+  - ubuntu-toolchain-r-test
+
+packages:
+  - g++-7
+  - cmake
+
+env:
+  - CC=/usr/bin/gcc CXX=/usr/bin/g++
+
+script:
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
