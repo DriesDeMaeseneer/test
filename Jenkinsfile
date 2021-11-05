@@ -10,7 +10,7 @@ pipeline {
          stage('Building') {
             steps {
                 echo 'Building...'
-                cmake CMakeLists.txt
+                sh "cmake CMakeLists.txt"
             }
         }
     }
