@@ -11,7 +11,6 @@ pipeline {
             steps {
                 echo 'Building...'
                 cmake CMakeLists.txt
-                make
             }
         }
     }
